@@ -1,0 +1,94 @@
+.title {
+  font-weight: 500;
+  font-size: 32px;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+/* input[type='file'] {
+  color: transparent;
+} */
+input[type="file"]::file-selector-button {
+  border: 2px solid #1eb859;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #97e971;
+  transition: 1s;
+}
+input[type="file"]::file-selector-button:hover {
+  background-color: #21c229;
+  border: 2px solid #16d495;
+}
+.customer-card {
+  background: rgba(128, 0, 0, 0.02);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.customer-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.customer-card-quantity {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.button-section {
+  margin: 3%;
+}
+.button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: royalblue;
+}
+
+.remove {
+  background-color: rgb(192, 53, 53);
+}
+.remove:hover {
+  background-color: rgb(187, 43, 43);
+}
+
+.printOnly {
+  visibility: hidden;
+}
+
+@media print {
+  .noprint {
+    visibility: hidden;
+  }
+  .printOnly {
+    visibility: visible;
+  }
+}
